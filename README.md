@@ -2,6 +2,163 @@
 
 <h3 align="center">A simple API with SpringBoot to manage people and adresses</h3>
 
+Esta é a coleção de requisições da Pessoas-API. Esta API foi desenvolvida para gerenciamento simples de pessoas e tem como objetivo estudo e aplicação de conhecimentos em java+springBoot.
+
+Link para a documentação de requisições: <p align="right">
+<a href="https://documenter.getpostman.com/view/24119108/2s935iskk9"/></a></p>
+ 
+ 
+
+-----------------------------------------------------
+POST
+
+Cadastro multiplos enderecos
+localhost:8080/pessoas/cadastro
+
+Teste de cadastro de usuários com múltiplos endereços. Retorna status code: 201-CREATED e a pessoa cadastrada no corpo do response.
+
+BODYraw
+
+{
+   "nome":"José",
+   "dataDeNascimento":"29/03/1999",
+   "enderecos":[
+        {
+            "logradouro":"Rua Quadrado",
+            "cep":"123456-89",
+            "numero":"112",
+            "cidade":"Juazeiro do Norte"
+        },
+{
+
+-----------------------------------------------------
+POST
+
+Cadastro
+localhost:8080/pessoas/cadastro
+
+Teste simples de adiçao de uma pessoa com um único endereço no corpo da requisição.
+BODYraw
+
+{
+   "nome":"Testes da Cunha e Silva",
+   "dataDeNascimento":"29/03/1997",
+   "enderecos":[
+        {
+            "logradouro":"Rua Quadrado",
+            "cep":"123456-89",
+            "numero":"112",
+            "cidade":"City of teste"
+        }
+   ]
+
+-----------------------------------------------------
+GET
+
+Lista
+localhost:8080/pessoas
+
+Lista todos os registro de pessoas juntamente de todos os registros de cada endereço por pessoa.
+
+-----------------------------------------------------
+GET
+
+Buscar
+localhost:8080/pessoas/2
+
+Busca especificamente por uma pessoa no banco de dados. É necessário saber o id da pessoa procurada, caso contrário retorna code:404-NOT FOUND.
+
+-----------------------------------------------------
+PUT
+
+Alterar
+localhost:8080/pessoas/atualizar/2
+
+Altera os dados de um registro e o retorna no corpo do response.
+BODYraw
+
+{
+    "nome": "Testes da Silva",
+    "dataDeNascimento": "29/06/1995",
+    "enderecos": [
+        {
+            "logradouro": "Rua Bolota",
+            "cep": "123456-78",
+            "numero": 10,
+            "cidade": "City of teste"
+        }
+    ]
+
+-----------------------------------------------------
+POST
+
+Inserir Endereço
+localhost:8080/pessoas/2/enderecos/adicionar
+
+Insere endereços para a pessoa do id passado como parametro no URI. Novamente é necessáro saber o id do usuário a que deseja efetuar a adição de endereços, caso contrário recebe code:404.
+BODYraw
+
+[
+    {   
+        "logradouro": "Rua Bolota",
+        "cep": "63031-180",
+        "numero": 964,
+        "cidade": "Jua-City"
+    }
+]
+
+-----------------------------------------------------
+GET
+
+Endereco Por pessoa
+localhost:8080/pessoas/2/enderecos/listar
+
+Lista todos os endereços da pessoa cujo id foi passado como parametro no URI.
+
+-----------------------------------------------------
+DEL
+
+Delete
+localhost:8080/pessoas/1
+
+Deleta uma pessoa do banco de dados
+BODYraw
+
+{
+   "nome":"Teste",
+   "dataDeNascimento":"12/02/1979",
+   "endereco":{
+      "logradouro":"Rua Teste",
+      "cep":"123456-78",
+      "numero":"1234",
+      "cidade":"Las Vegas"
+   }
+}
+
+-----------------------------------------------------
+PUT
+
+SetEndereco Principal
+localhost:8080/pessoas/2/enderecos/favoritar?endereco=1
+
+Determina qual será o endereço principal de uma pessoa por meio de dois parametros: pessoaId e enderecoId.
+
+PARAMS endereco
+BODYraw
+
+{
+    "nome": "Testes da Silva",
+    "dataDeNascimento": "29/06/1995",
+    "enderecos": [
+        {
+            "logradouro": "Rua Bolota",
+            "cep": "123456-78",
+            "numero": 10,
+            "cidade": "City of teste"
+        }
+    ]
+
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/psousaj" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="psousaj" height="30" width="40" /></a>
