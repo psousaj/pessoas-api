@@ -33,9 +33,9 @@ BODYraw
 ```
 
 -----------------------------------------------------
-## POST
+### POST
 
-### Cadastro
+## Cadastro
 localhost:8080/pessoas/cadastro
 
 Teste simples de adiçao de uma pessoa com um único endereço no corpo da requisição.
@@ -57,25 +57,25 @@ BODYraw
 ```
 
 -----------------------------------------------------
-## GET
+### GET
 
-### Lista
+## Lista
 localhost:8080/pessoas
 
 Lista todos os registro de pessoas juntamente de todos os registros de cada endereço por pessoa.
 
 -----------------------------------------------------
-## GET
+### GET
 
-### Buscar
+## Buscar
 localhost:8080/pessoas/2
 
 Busca especificamente por uma pessoa no banco de dados. É necessário saber o id da pessoa procurada, caso contrário retorna code:404-NOT FOUND.
 
 -----------------------------------------------------
-## PUT
+### PUT
 
-### Alterar
+## Alterar
 localhost:8080/pessoas/atualizar/2
 
 Altera os dados de um registro e o retorna no corpo do response.
@@ -97,9 +97,9 @@ BODYraw
 ```
 
 -----------------------------------------------------
-## POST
+### POST
 
-### Inserir Endereço
+## Inserir Endereço
 localhost:8080/pessoas/2/enderecos/adicionar
 
 Insere endereços para a pessoa do id passado como parametro no URI. Novamente é necessáro saber o id do usuário a que deseja efetuar a adição de endereços, caso contrário recebe code:404.
@@ -117,17 +117,17 @@ BODYraw
 ```
 
 -----------------------------------------------------
-## GET
+### GET
 
-### Endereco Por pessoa
+## Endereco Por pessoa
 localhost:8080/pessoas/2/enderecos/listar
 
 Lista todos os endereços da pessoa cujo id foi passado como parametro no URI.
 
 -----------------------------------------------------
-## DEL
+### DEL
 
-### Delete
+## Delete
 localhost:8080/pessoas/1
 
 Deleta uma pessoa do banco de dados
@@ -147,9 +147,9 @@ BODYraw
 ```
 
 -----------------------------------------------------
-## PUT
+### PUT
 
-### SetEndereco Principal
+## SetEndereco Principal
 localhost:8080/pessoas/2/enderecos/favoritar?endereco=1
 
 Determina qual será o endereço principal de uma pessoa por meio de dois parametros: pessoaId e enderecoId.
