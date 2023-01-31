@@ -28,8 +28,14 @@ BODYraw
             "numero":"112",
             "cidade":"Juazeiro do Norte"
         },
-{
-
+        {
+            "logradouro":"Rua Quadrado",
+            "cep":"123456-89",
+            "numero":"124",
+            "cidade":"Juazeiro do Norte"
+        }
+   ]
+}
 ```
 
 -----------------------------------------------------
