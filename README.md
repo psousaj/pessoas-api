@@ -4,8 +4,8 @@
 
 Esta é a coleção de requisições da Pessoas-API. Esta API foi desenvolvida para gerenciamento simples de pessoas e tem como objetivo estudo e aplicação de conhecimentos em java+springBoot. Todas as respostas são em json, e aqui mais a baixo tem alguns exemplos de requisição com corpo em json
 
-Link para a documentação de requisições: <p align="left">
-<a href="https://documenter.getpostman.com/view/24119108/2s935iskk9"/></a></p>
+Link para a documentação de requisições: <p align="right">
+<a href="https://documenter.getpostman.com/view/24119108/2s935iskk9"/>Postman Documenter</a></p>
 
 -----------------------------------------------------
 ### POST
