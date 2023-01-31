@@ -6,13 +6,11 @@ Esta é a coleção de requisições da Pessoas-API. Esta API foi desenvolvida p
 
 Link para a documentação de requisições: <p align="left">
 <a href="https://documenter.getpostman.com/view/24119108/2s935iskk9"/></a></p>
- 
- 
 
 -----------------------------------------------------
-POST
+### POST
 
-Cadastro multiplos enderecos
+## Cadastro multiplos enderecos
 localhost:8080/pessoas/cadastro
 
 Teste de cadastro de usuários com múltiplos endereços. Retorna status code: 201-CREATED e a pessoa cadastrada no corpo do response.
@@ -35,14 +33,15 @@ BODYraw
 ```
 
 -----------------------------------------------------
-POST
+## POST
 
-Cadastro
+### Cadastro
 localhost:8080/pessoas/cadastro
 
 Teste simples de adiçao de uma pessoa com um único endereço no corpo da requisição.
 BODYraw
 
+```json
 {
    "nome":"Testes da Cunha e Silva",
    "dataDeNascimento":"29/03/1997",
@@ -54,32 +53,35 @@ BODYraw
             "cidade":"City of teste"
         }
    ]
+}
+```
 
 -----------------------------------------------------
-GET
+## GET
 
-Lista
+### Lista
 localhost:8080/pessoas
 
 Lista todos os registro de pessoas juntamente de todos os registros de cada endereço por pessoa.
 
 -----------------------------------------------------
-GET
+## GET
 
-Buscar
+### Buscar
 localhost:8080/pessoas/2
 
 Busca especificamente por uma pessoa no banco de dados. É necessário saber o id da pessoa procurada, caso contrário retorna code:404-NOT FOUND.
 
 -----------------------------------------------------
-PUT
+## PUT
 
-Alterar
+### Alterar
 localhost:8080/pessoas/atualizar/2
 
 Altera os dados de um registro e o retorna no corpo do response.
 BODYraw
 
+```json
 {
     "nome": "Testes da Silva",
     "dataDeNascimento": "29/06/1995",
@@ -91,16 +93,19 @@ BODYraw
             "cidade": "City of teste"
         }
     ]
+}
+```
 
 -----------------------------------------------------
-POST
+## POST
 
-Inserir Endereço
+### Inserir Endereço
 localhost:8080/pessoas/2/enderecos/adicionar
 
 Insere endereços para a pessoa do id passado como parametro no URI. Novamente é necessáro saber o id do usuário a que deseja efetuar a adição de endereços, caso contrário recebe code:404.
 BODYraw
 
+```json
 [
     {   
         "logradouro": "Rua Bolota",
@@ -109,24 +114,26 @@ BODYraw
         "cidade": "Jua-City"
     }
 ]
+```
 
 -----------------------------------------------------
-GET
+## GET
 
-Endereco Por pessoa
+### Endereco Por pessoa
 localhost:8080/pessoas/2/enderecos/listar
 
 Lista todos os endereços da pessoa cujo id foi passado como parametro no URI.
 
 -----------------------------------------------------
-DEL
+## DEL
 
-Delete
+### Delete
 localhost:8080/pessoas/1
 
 Deleta uma pessoa do banco de dados
 BODYraw
 
+```json
 {
    "nome":"Teste",
    "dataDeNascimento":"12/02/1979",
@@ -137,11 +144,12 @@ BODYraw
       "cidade":"Las Vegas"
    }
 }
+```
 
 -----------------------------------------------------
-PUT
+## PUT
 
-SetEndereco Principal
+### SetEndereco Principal
 localhost:8080/pessoas/2/enderecos/favoritar?endereco=1
 
 Determina qual será o endereço principal de uma pessoa por meio de dois parametros: pessoaId e enderecoId.
@@ -149,6 +157,7 @@ Determina qual será o endereço principal de uma pessoa por meio de dois parame
 PARAMS endereco
 BODYraw
 
+```json
 {
     "nome": "Testes da Silva",
     "dataDeNascimento": "29/06/1995",
@@ -160,7 +169,8 @@ BODYraw
             "cidade": "City of teste"
         }
     ]
-
+}
+```
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
