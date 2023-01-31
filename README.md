@@ -18,7 +18,8 @@ localhost:8080/pessoas/cadastro
 Teste de cadastro de usuários com múltiplos endereços. Retorna status code: 201-CREATED e a pessoa cadastrada no corpo do response.
 
 BODYraw
-´´´
+
+```json
 {
    "nome":"José",
    "dataDeNascimento":"29/03/1999",
@@ -30,7 +31,9 @@ BODYraw
             "cidade":"Juazeiro do Norte"
         },
 {
-´´´
+
+```
+
 -----------------------------------------------------
 POST
 
