@@ -1,0 +1,14 @@
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/Dto/EnderecoDto.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/exceptionHandler/FormError.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/exceptionHandler/DefaultExceptionHandler.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/PessoasApplication.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/Dto/PessoaDto.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/controller/PessoaController.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/service/EnderecoService.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/model/Pessoa.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/service/PessoaService.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/repository/EnderecoRepository.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/exceptionHandler/NotFoundException.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/DataSourceConfig.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/repository/PessoaRepository.java
+/home/jpfilho/Documents/spring-ws/pessoas/src/main/java/br/com/dev/model/Endereco.java

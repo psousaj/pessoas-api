@@ -1,0 +1,14 @@
+br/com/dev/Dto/PessoaDto.class
+br/com/dev/model/Endereco.class
+br/com/dev/PessoasApplication.class
+br/com/dev/exceptionHandler/FormError.class
+br/com/dev/repository/EnderecoRepository.class
+br/com/dev/service/PessoaService.class
+br/com/dev/model/Pessoa.class
+br/com/dev/Dto/EnderecoDto.class
+br/com/dev/controller/PessoaController.class
+br/com/dev/service/EnderecoService.class
+br/com/dev/repository/PessoaRepository.class
+br/com/dev/exceptionHandler/DefaultExceptionHandler.class
+br/com/dev/DataSourceConfig.class
+br/com/dev/exceptionHandler/NotFoundException.class
