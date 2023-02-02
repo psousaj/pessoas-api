@@ -24,10 +24,10 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 
-import br.com.dev.Dto.PessoaDto;
-import br.com.dev.controller.PessoaController;
-import br.com.dev.model.Pessoa;
-import br.com.dev.service.PessoaService;
+import br.com.dev.pessoa.controller.PessoaController;
+import br.com.dev.pessoa.dto.PessoaDto;
+import br.com.dev.pessoa.model.Pessoa;
+import br.com.dev.pessoa.service.PessoaService;
 import io.restassured.http.ContentType;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 
@@ -94,7 +94,7 @@ public class PessoasControllerTest {
 		
 		Mockito.when(service.cadastro(any(PessoaDto.class))).thenReturn(ResponseEntity.ok(pessoa));
 
-		RestAssuredMockMvc.given().post("/pessoas/cadastro", objMapper.writeValueAsString(pessoa)).then().body(null, null);
+		RestAssuredMockMvc.given().post("/pessoas/cadastro", objMapper.writeValueAsString(pessoa)).then().status(HttpStatus.CREATED);
 		
 	}
 	
